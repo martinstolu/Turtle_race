@@ -11,10 +11,10 @@ def move_fd():
 def move_bck():
     tim.backward(10)
 
-def count_cl():
+def counter_clockwise():
     tim.left(10)
 
-def clock_ws():
+def clock_wise():
     tim.right(10)
 
 def clean():
@@ -25,8 +25,8 @@ def clean():
 my_screen.listen()
 my_screen.onkey(key= "W",fun= move_fd)
 my_screen.onkey(key= "S",fun= move_bck)
-my_screen.onkey(key= "A",fun= count_cl)
-my_screen.onkey(key= "D",fun= clock_ws)
+my_screen.onkey(key= "A", fun= counter_clockwise)
+my_screen.onkey(key= "D", fun= clock_wise)
 my_screen.onkey(key= "C",fun= clean)
 
 my_screen.exitonclick()
